@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+h1,h2,h3,p,img,ul,ol {
+    margin-bottom: 1rem;
+}
+/* ------ HEADER ------ */
+.cover {
+  background: url('assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+.text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.text {
+  margin: 0 auto;
+  padding: .5rem;
+  color: white;
+  background: hsla(100,0%,0%,.5);
+}
+.text h1 {
+  font-size: 3rem;
+  color: #d2ba87;
+  margin-bottom: 0;
+}
+.married {
+  font-size: 1.2rem;
+  letter-spacing: .15rem;
+}
+
+.married::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.5rem;
+  margin: .5rem auto;
+}
+.date {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+.date::before,.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+@media (min-width: 768px) {
+
+  .cover {
+    background: url('assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }
+  .text h1 {
+    font-size: 6rem;
+  }
+  .married {
+    text-transform: uppercase;
+  }
+  .text {
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 50%;
+  }
+}
+
+/* ------ GENERAL ------ */
+body {
+  background: url('assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+.locations,.program,.gift,.faq,.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+h1,h2 {
+  font-family: 'Great Vibes', cursive;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/* ------ Location ------ */
+
+.location-wrapper img {
+  height: 7.5rem;
+}
+.location-wrapper h3 {
+  font-weight: 700;
+}
+.location-wrapper div {
+  font-family: 'Muli', sans-serif;
+}
+.location-wrapper::after {
+  content: "";
+  display: block;
+  height: .18rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+@media (min-width: 768px) {
+
+  .location-wrapper {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+  .location-wrapper::after {
+    display: none;
+  }
+  .location-wrapper h3 {
+    text-align: center;
+  }
+}
+
+/* ------ Program ------ */
+
+.program {
+  color: #d2ba87;
+  background: hsla(100,0%,0%,.6);
+  width: 100vw;
+  font-family: 'Muli', sans-serif;
+}
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+}
+.program-wrapper p {
+  font-style: italic;
+}
+.program-wrapper ul,li {
+  text-align: left;
+}
+.program ul {
+  letter-spacing: .025rem;
+}
+
+@media (min-width: 768px) {
+
+  .program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+  }
+}
+
+/* ------ Gifts ------ */
+
+.gift img {
+  height: 7.5rem;
+}
+.gift p:last-child {
+  margin-bottom: 0;
+}
+
+/* ------ FAQ ------ */
+
+.faq {
+  color: #d2ba87;
+  background: hsla(100,0%,0%,.6);
+  width: 100vw;
+}
+.faq h2 {
+  margin-top: 1rem;
+}
+.question-wrapper p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+.question {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.answer {
+  margin-bottom: 1.5rem;
+}
+.question-wrapper::after {
+  content: "";
+  display: block;
+  height: .18rem;
+  width: 45vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+@media (min-width: 768px) {
+
+  .question-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+  .question-wrapper::after {
+    display: none;
+  }
+  h3 {
+    text-align: left;
+  }
+}
+
+/* ------ Footer ------ */
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: #606060;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
