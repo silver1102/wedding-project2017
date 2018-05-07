@@ -6,7 +6,7 @@ h1,h2,h3,p,img,ul,ol {
 }
 /* ------ HEADER ------ */
 .cover {
-  background: url('assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  background: url('assets/wedding.jpg') no-repeat 70% center/cover;
   display: table;
   text-align: center;
   height: 100vh;
@@ -58,7 +58,7 @@ h1,h2,h3,p,img,ul,ol {
 @media (min-width: 768px) {
 
   .cover {
-    background: url('assets/wedding-landing-cover.jpg') no-repeat center/cover;
+    background: url('assets/wedding.jpg') no-repeat center;
   }
   .text h1 {
     font-size: 6rem;
@@ -75,7 +75,7 @@ h1,h2,h3,p,img,ul,ol {
 
 /* ------ GENERAL ------ */
 body {
-  background: url('assets/wedding-landing-background.png') repeat center;
+  background: url('assets/background.png') repeat center;
   font-family: 'Libre Baskerville', serif;
   font-size: 1.125rem;
   line-height: 1.5;
